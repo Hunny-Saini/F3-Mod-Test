@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Landing Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="conatiner">
+        <h2 id="ip-container">MY Public IP ADDRESS :</h2>
+        <button class="Btn" id="getData">Get Data</button>
+    </div>
+    <div class="aftergetData" id="after-click">
+        <div class="map-section">
+            <div class="location-info">
+                <div class="long-lat">
+                    <div class="lat row"></div>
+                    <div class="long row"></div>
+                </div>
+                <div class="city-region">
+                    <div class="city row"></div>
+                    <div class="region row"></div>
+                </div>
+                <div class="org-host">
+                    <div class="org row"></div>
+                    <div class="host row"></div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe id="map" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="1000" height="370" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+        <div class="pincode-section">
+            <div class="info">
+                <div class="timezone"><strong>Time Zone: </strong> </div>
+                <div class="date"><strong>Date And Time: </strong></div>
+                <div class="pin"><strong>Pincode: </strong></div>
+                <div class="no-of-pins"><strong>Message: </strong></div>
+            </div>
+            <div class="search-section">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" type="search" placeholder="Filter">
+            </div>
+            <div class="cards-section" id="card-container">
+                <div class="loading"><lottie-player src="https://assets9.lottiefiles.com/packages/lf20_7Ug6EsAaAu.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player></div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.Btn{
+    background-color: black;
+    color: white;
+    padding: 0.60rem 3rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    max-width: 180px;
+}
+
+button:hover{
+    background-color: rgb(42, 42, 42);
+}
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+    padding-bottom: 0;
+}
+
+/* after-click section */
+.aftergetData{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+}
+
+.map-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.map-section iframe{
+    width: 100%;
+}
+
+.map{
+    align-self: center;
+    width: 100%;
+}
+
+.location-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-info div{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.cards-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    row-gap: 1.6rem;
+    margin: 0 1rem;
+}
+
+.card{
+    border: 1px solid black;
+    width: 41.9vw;
+    border-radius: 6px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* cards section */
+.pincode-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.search-section{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.search-section input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.row{
+    flex-direction: row !important;
+}
+
+/* loading style */
+.loading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
